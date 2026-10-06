@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- =====================================================
+         SEO / COMPARTILHAMENTO
+         ===================================================== -->
+    <meta name="description" content="Sistemas, ERP e apoio digital para MEIs e pequenos negócios. Configuração de notas fiscais, sistemas ERP, estoque, PDV e treinamento prático com suporte próximo.">
+    <meta name="author" content="DEAB Tech — Danilo Bertolani">
+    <meta name="theme-color" content="#0f172a">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
+    <link rel="canonical" href="https://dbertolani.github.io/deab-tech/sistemas.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="DEAB Tech">
+    <meta property="og:title" content="Sistemas, ERP e Apoio Digital | DEAB Tech">
+    <meta property="og:description" content="Configure seus sistemas, notas fiscais e ferramentas digitais com apoio prático e próximo.">
+    <meta property="og:url" content="https://dbertolani.github.io/deab-tech/sistemas.html">
+    <meta property="og:image" content="https://dbertolani.github.io/deab-tech/assets/images/og-image.png">
+    <meta property="og:image:alt" content="DEAB Tech — Sistemas, ERP e Apoio Digital">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sistemas, ERP e Apoio Digital | DEAB Tech">
+    <meta name="twitter:description" content="Apoio prático para MEIs e pequenos negócios organizarem seus sistemas e notas fiscais.">
+    <meta name="twitter:image" content="https://dbertolani.github.io/deab-tech/assets/images/og-image.png">
+
+    <title>Sistemas, ERP e Apoio Digital para Pequenos Negócios | DEAB Tech</title>
+
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://unpkg.com">
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        deab: {
+                            navy: '#0f172a',
+                            slate: '#1e293b',
+                            green: '#10b981',
+                            greenDark: '#059669'
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+
+    <!-- Ícones Lucide -->
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .hero-grid {
+            background-image:
+                linear-gradient(rgba(15, 23, 42, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(15, 23, 42, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .service-card {
+            transition:
+                transform 0.25s ease,
+                box-shadow 0.25s ease,
+                border-color 0.25s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .mobile-menu {
+            transition:
+                max-height 0.3s ease,
+                opacity 0.2s ease;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+<header
+        id="inicio"
+        class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-slate-950/95 backdrop-blur-md"
+    >
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+            <div class="flex h-20 items-center justify-between">
+
+                <!-- Logo -->
+                <a
+                    href="index.html#inicio"
+                    class="flex items-center gap-3"
+                    aria-label="DEAB Tech - Página inicial"
+                >
+                    <div class="flex h-11 w-11 items-center justify-center overflow-hidden rounded-xl bg-slate-900 shadow-lg shadow-emerald-500/20">
+                        <img
+                            src="assets/images/logo-deab-tech.svg"
+                            alt="DEAB Tech"
+                            class="h-full w-full object-contain"
+                            width="44"
+                            height="44"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                        >
+                        <span class="hidden h-full w-full items-center justify-center bg-emerald-700 text-xl font-black text-white">D</span>
+                    </div>
+
+                    <div class="leading-tight">
+                        <div class="text-lg font-extrabold tracking-tight text-white">
+                            DEAB<span class="text-emerald-400"> Tech</span>
+                        </div>
+
+                        <div class="text-[10px] font-medium uppercase tracking-[0.2em] text-slate-400">
+                            Tecnologia & Suporte
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Navegação desktop -->
+                <nav class="hidden items-center gap-7 lg:flex">
+                    <a href="#inicio" class="text-sm font-medium text-slate-200 transition hover:text-emerald-400">
+                        Início
+                    </a>
+
+                    <a href="index.html#solucoes" class="text-sm font-medium text-slate-300 transition hover:text-emerald-400">
+                        Soluções em TI
+                    </a>
+
+                    <a href="sistemas.html" class="text-sm font-medium text-emerald-400 transition hover:text-emerald-300">
+                        Sistemas
+                    </a>
+
+                    <a href="index.html#suporte" class="text-sm font-medium text-slate-300 transition hover:text-emerald-400">
+                        Suporte Remoto
+                    </a>
+
+                    <a href="index.html#equipamentos" class="text-sm font-medium text-slate-300 transition hover:text-emerald-400">
+                        Dicas & Equipamentos
+                    </a>
+                </nav>
+
+                <!-- CTA desktop -->
+                <a
+                    href="https://wa.me/5527996962395?text=Ol%C3%A1%2C%20vim%20pelo%20site%20DEAB%20Tech"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="hidden items-center gap-2 rounded-xl bg-emerald-700 px-5 py-3 text-sm font-bold text-white shadow-lg shadow-emerald-500/20 transition hover:bg-emerald-600 sm:flex"
+                >
+                    <i data-lucide="message-circle" class="h-4 w-4"></i>
+                    Falar no WhatsApp
+                </a>
+
+                <!-- Botão mobile -->
+                <button
+                    id="menuButton"
+                    type="button"
+                    class="rounded-lg p-2 text-slate-200 hover:bg-white/10 lg:hidden"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                >
+                    <i data-lucide="menu" class="h-6 w-6"></i>
+                </button>
+            </div>
+
+            <!-- Menu mobile -->
+            <div id="mobileMenu" class="mobile-menu max-h-0 overflow-hidden opacity-0 lg:hidden">
+                <nav class="flex flex-col gap-1 pb-5">
+
+                    <a href="#inicio" class="rounded-lg px-4 py-3 text-sm font-medium text-slate-200 hover:bg-white/10">
+                        Início
+                    </a>
+
+                    <a href="#solucoes" class="rounded-lg px-4 py-3 text-sm font-medium text-slate-200 hover:bg-white/10">
+                        Soluções em TI
+                    </a>
+
+                    <a href="sistemas.html" class="rounded-lg px-4 py-3 text-sm font-medium text-emerald-400 hover:bg-white/10">
+                        Sistemas
+                    </a>
+
+                    <a href="index.html#suporte" class="rounded-lg px-4 py-3 text-sm font-medium text-slate-200 hover:bg-white/10">
+                        Suporte Remoto
+                    </a>
+
+                    <a href="#equipamentos" class="rounded-lg px-4 py-3 text-sm font-medium text-slate-200 hover:bg-white/10">
+                        Dicas & Equipamentos
+                    </a>
+
+                    <a
+                        href="https://wa.me/5527996962395?text=Ol%C3%A1%2C%20vim%20pelo%20site%20DEAB%20Tech"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="mt-2 flex items-center justify-center gap-2 rounded-xl bg-emerald-700 px-5 py-3 text-sm font-bold text-white"
+                    >
+                        <i data-lucide="message-circle" class="h-4 w-4"></i>
+                        Falar no WhatsApp
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+<main>
+
+    <!-- =====================================================
+         HERO
+         ===================================================== -->
+    <section class="relative overflow-hidden bg-slate-950 pt-32 pb-20 sm:pt-40 sm:pb-28">
+
+        <div class="absolute inset-0 hero-grid opacity-30"></div>
+        <div class="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-emerald-500/10 blur-3xl"></div>
+        <div class="absolute -bottom-32 -left-32 h-96 w-96 rounded-full bg-blue-500/10 blur-3xl"></div>
+
+        <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center">
+
+                <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-2 text-sm font-semibold text-emerald-300">
+                    <i data-lucide="settings-2" class="h-4 w-4"></i>
+                    Sistemas e Apoio Digital
+                </div>
+
+                <h1 class="text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
+                    Facilite a rotina da sua empresa com a
+                    <span class="text-emerald-400">tecnologia certa.</span>
+                </h1>
+
+                <p class="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-300 sm:text-xl">
+                    De Apps de Notas Fiscais a Sistemas ERP completos:
+                    nós ajudamos você a escolher, configurar e aprender
+                    a usar as ferramentas que realmente fazem sentido
+                    para o seu negócio.
+                </p>
+
+                <div class="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
+                    <a
+                        href="https://wa.me/5527996962395?text=Quero%20ajuda%20para%20organizar%20meus%20sistemas%20e%20notas%20fiscais"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-700 px-6 py-4 font-bold text-white shadow-xl shadow-emerald-500/20 transition hover:bg-emerald-600"
+                    >
+                        <i data-lucide="message-circle" class="h-5 w-5"></i>
+                        Quero organizar meus sistemas
+                    </a>
+
+                    <a
+                        href="#servicos"
+                        class="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-600 bg-white/5 px-6 py-4 font-bold text-white transition hover:border-emerald-400 hover:bg-white/10"
+                    >
+                        Conhecer as soluções
+                        <i data-lucide="arrow-down" class="h-5 w-5"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+         SERVIÇOS
+         ===================================================== -->
+    <section id="servicos" class="bg-white py-20 sm:py-24">
+
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+            <div class="mx-auto mb-12 max-w-2xl text-center">
+                <span class="text-sm font-bold uppercase tracking-widest text-emerald-700">
+                    O que fazemos na prática
+                </span>
+
+                <h2 class="mt-3 text-3xl font-black text-slate-900 sm:text-4xl">
+                    Tecnologia que você consegue usar de verdade
+                </h2>
+
+                <p class="mt-4 leading-7 text-slate-600">
+                    Não basta instalar um sistema. A ideia é deixar tudo
+                    funcionando e explicar de forma simples como utilizar
+                    no dia a dia.
+                </p>
+            </div>
+
+
+            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+                <!-- App de Notas -->
+                <article class="service-card rounded-3xl border border-slate-200 bg-slate-50 p-7 shadow-sm hover:shadow-xl">
+
+                    <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-100 text-blue-700">
+                        <i data-lucide="file-text" class="h-7 w-7"></i>
+                    </div>
+
+                    <h3 class="mt-6 text-xl font-black text-slate-900">
+                        App de Notas para MEIs
+                    </h3>
+
+                    <p class="mt-4 leading-7 text-slate-600">
+                        Para MEIs que prestam serviços e precisam emitir
+                        suas notas fiscais sem transformar isso em uma
+                        complicação.
+                    </p>
+
+                    <ul class="mt-6 space-y-3 text-sm text-slate-600">
+                        <li class="flex gap-3">
+                            <i data-lucide="check-circle-2" class="h-5 w-5 shrink-0 text-emerald-700"></i>
+                            Configuração do Emissor Nacional no celular
+                        </li>
+                        <li class="flex gap-3">
+                            <i data-lucide="check-circle-2" class="h-5 w-5 shrink-0 text-emerald-700"></i>
+                            Cadastro inicial
+                        </li>
+                        <li class="flex gap-3">
+                            <i data-lucide="check-circle-2" class="h-5 w-5 shrink-0 text-emerald-700"></i>
+                            Treinamento prático para emitir notas
+                        </li>
+                    </ul>
+                </article>
+
+
+                <!-- ERP -->
+                <article class="service-card rounded-3xl border border-emerald-200 bg-slate-50 p-7 shadow-sm hover:shadow-xl">
+
+                    <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-700">
+                        <i data-lucide="layout-dashboard" class="h-7 w-7"></i>
+                    </div>
+
+                    <h3 class="mt-6 text-xl font-black text-slate-900">
+                        Implantação de ERP
+                    </h3>
+
+                    <p class="mt-4 leading-7 text-slate-600">
+                        Para comércio, lojistas e e-commerce que precisam
+                        organizar melhor estoque, vendas e emissão fiscal.
+                    </p>
+
+                    <ul class="mt-6 space-y-3 text-sm text-slate-600">
+                        <li class="flex gap-3">
+                            <i data-lucide="check-circle-2" class="h-5 w-5 shrink-0 text-emerald-700"></i>
+                            Configuração inicial do sistema
+                        </li>
+                        <li class="flex gap-3">
+                            <i data-lucide="check-circle-2" class="h-5 w-5 shrink-0 text-emerald-700"></i>
+                            Estoque e cadastro de produtos
+                        </li>
+                        <li class="flex gap-3">
+                            <i data-lucide="check-circle-2" class="h-5 w-5 shrink-0 text-emerald-700"></i>
+                            PDV e emissão fiscal
+                        </li>
+                    </ul>
+
+                    <p class="mt-5 text-xs font-semibold text-slate-500">
+                        Soluções como Bling e Tiny, conforme a necessidade
+                        do negócio.
+                    </p>
+                </article>
+
+
+                <!-- Apoio lado a lado -->
+                <article class="service-card rounded-3xl border border-slate-200 bg-slate-50 p-7 shadow-sm hover:shadow-xl md:col-span-2 lg:col-span-1">
+
+                    <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-purple-100 text-purple-700">
+                        <i data-lucide="hand-helping" class="h-7 w-7"></i>
+                    </div>
+
+                    <h3 class="mt-6 text-xl font-black text-slate-900">
+                        Apoio Digital "Lado a Lado"
+                    </h3>
+
+                    <p class="mt-4 leading-7 text-slate-600">
+                        Nosso diferencial é estar junto de verdade.
+                        Não entregamos apenas um sistema e deixamos você
+                        descobrir sozinho como usar.
+                    </p>
+
+                    <ul class="mt-6 space-y-3 text-sm text-slate-600">
+                        <li class="flex gap-3">
+                            <i data-lucide="check-circle-2" class="h-5 w-5 shrink-0 text-emerald-700"></i>
+                            Configuramos no seu equipamento
+                        </li>
+                        <li class="flex gap-3">
+                            <i data-lucide="check-circle-2" class="h-5 w-5 shrink-0 text-emerald-700"></i>
+                            Ensinamos você e sua equipe
+                        </li>
+                        <li class="flex gap-3">
+                            <i data-lucide="check-circle-2" class="h-5 w-5 shrink-0 text-emerald-700"></i>
+                            Suporte prático no dia a dia
+                        </li>
+                    </ul>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+         DIFERENCIAL
+         ===================================================== -->
+    <section class="bg-slate-50 py-20 sm:py-24">
+
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+            <div class="grid items-center gap-12 lg:grid-cols-2">
+
+                <div>
+                    <span class="text-sm font-bold uppercase tracking-widest text-emerald-700">
+                        Sem complicação
+                    </span>
+
+                    <h2 class="mt-3 text-3xl font-black text-slate-900 sm:text-4xl">
+                        Você não precisa virar especialista em tecnologia.
+                    </h2>
+
+                    <p class="mt-6 text-lg leading-8 text-slate-600">
+                        O sistema deve facilitar sua rotina — e não criar
+                        mais uma tarefa para você resolver.
+                    </p>
+
+                    <p class="mt-4 leading-7 text-slate-600">
+                        Por isso, a DEAB Tech trabalha de forma próxima:
+                        entendemos como sua empresa funciona, configuramos
+                        as ferramentas necessárias e mostramos, passo a
+                        passo, como utilizar tudo no dia a dia.
+                    </p>
+
+                    <a
+                        href="https://wa.me/5527996962395?text=Quero%20ajuda%20para%20organizar%20meus%20sistemas%20e%20notas%20fiscais"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="mt-8 inline-flex items-center gap-2 rounded-xl bg-slate-900 px-6 py-4 font-bold text-white transition hover:bg-slate-800"
+                    >
+                        <i data-lucide="message-circle" class="h-5 w-5"></i>
+                        Falar com a DEAB Tech
+                    </a>
+                </div>
+
+
+                <div class="grid gap-4 sm:grid-cols-2">
+
+                    <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                        <i data-lucide="user-round-check" class="h-7 w-7 text-emerald-700"></i>
+                        <h3 class="mt-4 font-black text-slate-900">Atendimento próximo</h3>
+                        <p class="mt-2 text-sm leading-6 text-slate-600">
+                            Você fala com uma pessoa que entende sua necessidade
+                            e explica sem complicar.
+                        </p>
+                    </div>
+
+                    <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                        <i data-lucide="wrench" class="h-7 w-7 text-emerald-700"></i>
+                        <h3 class="mt-4 font-black text-slate-900">Configuração prática</h3>
+                        <p class="mt-2 text-sm leading-6 text-slate-600">
+                            A ferramenta é configurada pensando no seu equipamento
+                            e na sua rotina.
+                        </p>
+                    </div>
+
+                    <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                        <i data-lucide="graduation-cap" class="h-7 w-7 text-emerald-700"></i>
+                        <h3 class="mt-4 font-black text-slate-900">Você aprende usando</h3>
+                        <p class="mt-2 text-sm leading-6 text-slate-600">
+                            Treinamento direto ao ponto, com exemplos da sua
+                            própria rotina.
+                        </p>
+                    </div>
+
+                    <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                        <i data-lucide="headphones" class="h-7 w-7 text-emerald-700"></i>
+                        <h3 class="mt-4 font-black text-slate-900">Suporte quando precisar</h3>
+                        <p class="mt-2 text-sm leading-6 text-slate-600">
+                            Se surgir uma dúvida depois, você não fica sozinho.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+         PROCESSO
+         ===================================================== -->
+    <section id="processo" class="bg-white py-20 sm:py-24">
+
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+
+            <div class="mx-auto mb-14 max-w-2xl text-center">
+                <span class="text-sm font-bold uppercase tracking-widest text-emerald-700">
+                    Como funciona
+                </span>
+
+                <h2 class="mt-3 text-3xl font-black text-slate-900 sm:text-4xl">
+                    Simples, do começo ao fim
+                </h2>
+
+                <p class="mt-4 text-slate-600">
+                    Sem excesso de termos técnicos e sem deixar você perdido
+                    depois da configuração.
+                </p>
+            </div>
+
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+                <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-900 font-black text-white">1</div>
+                    <h3 class="mt-5 text-lg font-black text-slate-900">Entendemos sua rotina</h3>
+                    <p class="mt-3 text-sm leading-6 text-slate-600">
+                        Conversamos sobre o que você faz hoje, suas dificuldades
+                        e o que precisa melhorar.
+                    </p>
+                </div>
+
+                <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-900 font-black text-white">2</div>
+                    <h3 class="mt-5 text-lg font-black text-slate-900">Escolhemos a ferramenta</h3>
+                    <p class="mt-3 text-sm leading-6 text-slate-600">
+                        Avaliamos qual app ou sistema atende melhor à sua
+                        necessidade, sem recursos desnecessários.
+                    </p>
+                </div>
+
+                <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-900 font-black text-white">3</div>
+                    <h3 class="mt-5 text-lg font-black text-slate-900">Configuramos tudo</h3>
+                    <p class="mt-3 text-sm leading-6 text-slate-600">
+                        Fazemos os ajustes necessários no sistema, computador
+                        ou celular para deixar tudo pronto.
+                    </p>
+                </div>
+
+                <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-700 font-black text-white">4</div>
+                    <h3 class="mt-5 text-lg font-black text-slate-900">Treinamos você</h3>
+                    <p class="mt-3 text-sm leading-6 text-slate-600">
+                        Mostramos na prática como utilizar a ferramenta e
+                        deixamos você mais seguro para tocar sua rotina.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =====================================================
+         CTA
+         ===================================================== -->
+    <section class="px-4 py-10 sm:px-6 lg:px-8">
+
+        <div class="mx-auto max-w-7xl overflow-hidden rounded-3xl bg-slate-950">
+
+            <div class="relative px-6 py-12 sm:px-12 sm:py-14">
+
+                <div class="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-emerald-500/10 blur-3xl"></div>
+
+                <div class="relative mx-auto max-w-3xl text-center">
+
+                    <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-700 text-white">
+                        <i data-lucide="messages-square" class="h-7 w-7"></i>
+                    </div>
+
+                    <h2 class="mt-6 text-3xl font-black text-white sm:text-4xl">
+                        Quer deixar seus sistemas mais simples?
+                    </h2>
+
+                    <p class="mt-5 text-lg leading-7 text-slate-300">
+                        Conte para a DEAB Tech o que você precisa.
+                        Vamos entender sua situação e encontrar uma forma
+                        prática de organizar sua rotina.
+                    </p>
+
+                    <a
+                        href="https://wa.me/5527996962395?text=Quero%20ajuda%20para%20organizar%20meus%20sistemas%20e%20notas%20fiscais"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="mt-8 inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-700 px-7 py-4 text-base font-black text-white shadow-lg shadow-emerald-900/30 transition hover:bg-emerald-600"
+                    >
+                        <i data-lucide="message-circle" class="h-5 w-5"></i>
+                        Quero ajuda para organizar meus sistemas e notas fiscais
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="bg-slate-950 text-slate-300">
+
+        <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+
+            <div class="grid gap-10 md:grid-cols-4">
+
+                <!-- Marca -->
+                <div class="md:col-span-2">
+
+                    <div class="flex items-center gap-3">
+
+                        <div class="flex h-11 w-11 items-center justify-center overflow-hidden rounded-xl bg-slate-900">
+                            <img
+                                src="assets/images/logo-deab-tech.svg"
+                                alt="DEAB Tech"
+                                class="h-full w-full object-contain"
+                                width="44"
+                                height="44"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                            >
+                            <span class="hidden h-full w-full items-center justify-center bg-emerald-700 text-xl font-black text-white">D</span>
+                        </div>
+
+                        <div>
+                            <div class="text-lg font-extrabold text-white">
+                                DEAB<span class="text-emerald-400"> Tech</span>
+                            </div>
+
+                            <div class="text-xs uppercase tracking-widest text-slate-400">
+                                Tecnologia & Suporte
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="mt-5 max-w-md text-sm leading-6 text-slate-400">
+                        Suporte técnico, manutenção de computadores, Help Desk
+                        e apoio digital para MEIs, pequenas empresas,
+                        varejo e profissionais.
+                    </p>
+                </div>
+
+
+                <!-- Navegação -->
+                <div>
+
+                    <h3 class="font-bold text-white">
+                        Navegação
+                    </h3>
+
+                    <ul class="mt-4 space-y-3 text-sm">
+
+                        <li>
+                            <a href="index.html#inicio" class="transition hover:text-emerald-400">
+                                Início
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="index.html#solucoes" class="transition hover:text-emerald-400">
+                                Soluções em TI
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="index.html#suporte" class="transition hover:text-emerald-400">
+                                Suporte Remoto
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="index.html#equipamentos" class="transition hover:text-emerald-400">
+                                Dicas & Equipamentos
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <!-- Contato -->
+                <div>
+
+                    <h3 class="font-bold text-white">
+                        Contato
+                    </h3>
+
+                    <ul class="mt-4 space-y-3 text-sm">
+
+                        <li>
+                            <a
+                                href="https://wa.me/5527996962395?text=Ol%C3%A1%2C%20vim%20pelo%20site%20DEAB%20Tech"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="flex items-center gap-2 transition hover:text-emerald-400"
+                            >
+                                <i data-lucide="message-circle" class="h-4 w-4"></i>
+                                WhatsApp
+                            </a>
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="monitor" class="h-4 w-4"></i>
+                            Atendimento remoto
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="map-pin" class="h-4 w-4"></i>
+                            Atendimento presencial
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="mt-10 border-t border-slate-800 pt-6">
+
+                <div class="flex flex-col gap-3 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+
+                    <p>
+                        © <span id="currentYear"></span> DEAB Tech.
+                        Todos os direitos reservados.
+                    </p>
+
+                    <div class="flex gap-5">
+
+                        <a
+                            href="#"
+                            class="transition hover:text-slate-300"
+                            onclick="return false;"
+                        >
+                            Política de Privacidade
+                        </a>
+
+                        <a
+                            href="https://deab.com.br"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="transition hover:text-slate-300"
+                        >
+                            DEAB
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- Botão flutuante WhatsApp -->
+<a
+    href="https://wa.me/5527996962395?text=Quero%20ajuda%20para%20organizar%20meus%20sistemas%20e%20notas%20fiscais"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Falar com a DEAB Tech pelo WhatsApp"
+    class="fixed bottom-5 right-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-emerald-700 text-white shadow-2xl shadow-emerald-500/30 transition hover:scale-105 hover:bg-emerald-600 sm:bottom-7 sm:right-7"
+>
+    <i data-lucide="message-circle" class="h-6 w-6"></i>
+</a>
+
+<!-- =====================================================
+     JAVASCRIPT
+     ===================================================== -->
+<script>
+    // Lucide: mesma inicialização segura do index.html.
+    window.addEventListener('DOMContentLoaded', () => {
+        if (window.lucide) {
+            window.lucide.createIcons();
+        }
+    });
+
+    // Menu mobile: mesma lógica do index.html.
+    const menuButton = document.getElementById('menuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuButton.addEventListener('click', () => {
+        const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+
+        menuButton.setAttribute('aria-expanded', String(!isOpen));
+
+        if (isOpen) {
+            mobileMenu.style.maxHeight = '0px';
+            mobileMenu.style.opacity = '0';
+        } else {
+            mobileMenu.style.maxHeight = mobileMenu.scrollHeight + 'px';
+            mobileMenu.style.opacity = '1';
+        }
+    });
+
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.style.maxHeight = '0px';
+            mobileMenu.style.opacity = '0';
+            menuButton.setAttribute('aria-expanded', 'false');
+        });
+    });
+
+    // Ano automático no rodapé.
+    const currentYear = document.getElementById('currentYear');
+    if (currentYear) {
+        currentYear.textContent = new Date().getFullYear();
+    }
+</script>
+
+</body>
+</html>
