@@ -63,8 +63,6 @@
     </script>
 
     <!-- Ícones Lucide -->
-    <script src="https://unpkg.com/lucide@0.344.0" defer></script>
-
     <style>
         html {
             scroll-behavior: smooth;
@@ -129,6 +127,8 @@
                             class="h-full w-full object-contain"
                             width="44"
                             height="44"
+                        decoding="async"
+                        fetchpriority="high"
                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                         >
                         <span class="hidden h-full w-full items-center justify-center bg-emerald-700 text-xl font-black text-white">D</span>
@@ -147,23 +147,23 @@
 
                 <!-- Navegação desktop -->
                 <nav class="hidden items-center gap-7 lg:flex">
-                    <a href="#inicio" class="text-sm font-medium text-slate-200 transition hover:text-emerald-400">
+                    <a href="#inicio" class="text-sm font-medium text-slate-200 transition-colors duration-200 hover:text-emerald-400">
                         Início
                     </a>
 
-                    <a href="index.html#solucoes" class="text-sm font-medium text-slate-300 transition hover:text-emerald-400">
+                    <a href="index.html#solucoes" class="text-sm font-medium text-slate-300 transition-colors duration-200 hover:text-emerald-400">
                         Soluções em TI
                     </a>
 
-                    <a href="sistemas.html" class="text-sm font-medium text-emerald-400 transition hover:text-emerald-300">
+                    <a href="sistemas.html" class="text-sm font-medium text-emerald-400 transition-colors duration-200 hover:text-emerald-300">
                         Sistemas
                     </a>
 
-                    <a href="index.html#suporte" class="text-sm font-medium text-slate-300 transition hover:text-emerald-400">
+                    <a href="index.html#suporte" class="text-sm font-medium text-slate-300 transition-colors duration-200 hover:text-emerald-400">
                         Suporte Remoto
                     </a>
 
-                    <a href="index.html#equipamentos" class="text-sm font-medium text-slate-300 transition hover:text-emerald-400">
+                    <a href="index.html#equipamentos" class="text-sm font-medium text-slate-300 transition-colors duration-200 hover:text-emerald-400">
                         Dicas & Equipamentos
                     </a>
                 </nav>
@@ -173,9 +173,9 @@
                     href="https://wa.me/5527996962395?text=Ol%C3%A1%2C%20vim%20pelo%20site%20DEAB%20Tech"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="hidden items-center gap-2 rounded-xl bg-emerald-700 px-5 py-3 text-sm font-bold text-white shadow-lg shadow-emerald-500/20 transition hover:bg-emerald-600 sm:flex"
+                    class="hidden items-center gap-2 rounded-xl bg-emerald-700 px-5 py-3 text-sm font-bold text-white shadow-lg shadow-emerald-500/20 transition-colors duration-200 hover:bg-emerald-600 sm:flex"
                 >
-                    <i data-lucide="message-circle" class="h-4 w-4"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path><path d="M8 12h.01"></path><path d="M12 12h.01"></path><path d="M16 12h.01"></path></svg>
                     Falar no WhatsApp
                 </a>
 
@@ -187,7 +187,7 @@
                     aria-label="Abrir menu"
                     aria-expanded="false"
                 >
-                    <i data-lucide="menu" class="h-6 w-6"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6" aria-hidden="true"><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
                 </button>
             </div>
 
@@ -221,7 +221,7 @@
                         rel="noopener noreferrer"
                         class="mt-2 flex items-center justify-center gap-2 rounded-xl bg-emerald-700 px-5 py-3 text-sm font-bold text-white"
                     >
-                        <i data-lucide="message-circle" class="h-4 w-4"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path><path d="M8 12h.01"></path><path d="M12 12h.01"></path><path d="M16 12h.01"></path></svg>
                         Falar no WhatsApp
                     </a>
                 </nav>
@@ -244,7 +244,7 @@
             <div class="max-w-4xl mx-auto text-center">
 
                 <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-2 text-sm font-semibold text-emerald-300">
-                    <i data-lucide="settings-2" class="h-4 w-4"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M20 7h-9"></path><path d="M14 17H5"></path><circle cx="17" cy="17" r="3"></circle><circle cx="7" cy="7" r="3"></circle></svg>
                     Sistemas e Apoio Digital
                 </div>
 
@@ -265,18 +265,18 @@
                         href="https://wa.me/5527996962395?text=Quero%20ajuda%20para%20organizar%20meus%20sistemas%20e%20notas%20fiscais"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-700 px-6 py-4 font-bold text-white shadow-xl shadow-emerald-500/20 transition hover:bg-emerald-600"
+                        class="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-700 px-6 py-4 font-bold text-white shadow-xl shadow-emerald-500/20 transition-colors duration-200 hover:bg-emerald-600"
                     >
-                        <i data-lucide="message-circle" class="h-5 w-5"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path><path d="M8 12h.01"></path><path d="M12 12h.01"></path><path d="M16 12h.01"></path></svg>
                         Quero organizar meus sistemas
                     </a>
 
                     <a
                         href="#servicos"
-                        class="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-600 bg-white/5 px-6 py-4 font-bold text-white transition hover:border-emerald-400 hover:bg-white/10"
+                        class="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-600 bg-white/5 px-6 py-4 font-bold text-white transition-colors duration-200 hover:border-emerald-400 hover:bg-white/10"
                     >
                         Conhecer as soluções
-                        <i data-lucide="arrow-down" class="h-5 w-5"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg>
                     </a>
                 </div>
 
@@ -315,7 +315,7 @@
                 <article class="service-card rounded-3xl border border-slate-200 bg-slate-50 p-7 shadow-sm hover:shadow-xl">
 
                     <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-100 text-blue-700">
-                        <i data-lucide="file-text" class="h-7 w-7"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-7 w-7" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v6h6"></path><path d="M8 13h8"></path><path d="M8 17h6"></path></svg>
                     </div>
 
                     <h3 class="mt-6 text-xl font-black text-slate-900">
@@ -330,15 +330,15 @@
 
                     <ul class="mt-6 space-y-3 text-sm text-slate-600">
                         <li class="flex gap-3">
-                            <i data-lucide="check-circle-2" class="h-5 w-5 shrink-0 text-emerald-700"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-emerald-700" aria-hidden="true"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path><path d="m9 12 2 2 4-4"></path></svg>
                             Configuração do Emissor Nacional no celular
                         </li>
                         <li class="flex gap-3">
-                            <i data-lucide="check-circle-2" class="h-5 w-5 shrink-0 text-emerald-700"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-emerald-700" aria-hidden="true"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path><path d="m9 12 2 2 4-4"></path></svg>
                             Cadastro inicial
                         </li>
                         <li class="flex gap-3">
-                            <i data-lucide="check-circle-2" class="h-5 w-5 shrink-0 text-emerald-700"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-emerald-700" aria-hidden="true"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path><path d="m9 12 2 2 4-4"></path></svg>
                             Treinamento prático para emitir notas
                         </li>
                     </ul>
@@ -349,7 +349,7 @@
                 <article class="service-card rounded-3xl border border-emerald-200 bg-slate-50 p-7 shadow-sm hover:shadow-xl">
 
                     <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-700">
-                        <i data-lucide="layout-dashboard" class="h-7 w-7"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-7 w-7" aria-hidden="true"><rect width="7" height="9" x="3" y="3" rx="1"></rect><rect width="7" height="5" x="14" y="3" rx="1"></rect><rect width="7" height="9" x="14" y="12" rx="1"></rect><rect width="7" height="5" x="3" y="16" rx="1"></rect></svg>
                     </div>
 
                     <h3 class="mt-6 text-xl font-black text-slate-900">
@@ -363,15 +363,15 @@
 
                     <ul class="mt-6 space-y-3 text-sm text-slate-600">
                         <li class="flex gap-3">
-                            <i data-lucide="check-circle-2" class="h-5 w-5 shrink-0 text-emerald-700"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-emerald-700" aria-hidden="true"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path><path d="m9 12 2 2 4-4"></path></svg>
                             Configuração inicial do sistema
                         </li>
                         <li class="flex gap-3">
-                            <i data-lucide="check-circle-2" class="h-5 w-5 shrink-0 text-emerald-700"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-emerald-700" aria-hidden="true"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path><path d="m9 12 2 2 4-4"></path></svg>
                             Estoque e cadastro de produtos
                         </li>
                         <li class="flex gap-3">
-                            <i data-lucide="check-circle-2" class="h-5 w-5 shrink-0 text-emerald-700"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-emerald-700" aria-hidden="true"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path><path d="m9 12 2 2 4-4"></path></svg>
                             PDV e emissão fiscal
                         </li>
                     </ul>
@@ -387,7 +387,7 @@
                 <article class="service-card rounded-3xl border border-slate-200 bg-slate-50 p-7 shadow-sm hover:shadow-xl md:col-span-2 lg:col-span-1">
 
                     <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-purple-100 text-purple-700">
-                        <i data-lucide="hand-helping" class="h-7 w-7"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-7 w-7" aria-hidden="true"><path d="m11 11 2 2a2 2 0 0 0 3 0l4-4a2 2 0 0 0-3-3l-4 4"></path><path d="M2 12h3l4 4h4"></path><path d="M2 17h5"></path><path d="M2 7h3l2 2"></path></svg>
                     </div>
 
                     <h3 class="mt-6 text-xl font-black text-slate-900">
@@ -402,15 +402,15 @@
 
                     <ul class="mt-6 space-y-3 text-sm text-slate-600">
                         <li class="flex gap-3">
-                            <i data-lucide="check-circle-2" class="h-5 w-5 shrink-0 text-emerald-700"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-emerald-700" aria-hidden="true"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path><path d="m9 12 2 2 4-4"></path></svg>
                             Configuramos no seu equipamento
                         </li>
                         <li class="flex gap-3">
-                            <i data-lucide="check-circle-2" class="h-5 w-5 shrink-0 text-emerald-700"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-emerald-700" aria-hidden="true"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path><path d="m9 12 2 2 4-4"></path></svg>
                             Ensinamos você e sua equipe
                         </li>
                         <li class="flex gap-3">
-                            <i data-lucide="check-circle-2" class="h-5 w-5 shrink-0 text-emerald-700"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 shrink-0 text-emerald-700" aria-hidden="true"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z"></path><path d="m9 12 2 2 4-4"></path></svg>
                             Suporte prático no dia a dia
                         </li>
                     </ul>
@@ -455,9 +455,9 @@
                         href="https://wa.me/5527996962395?text=Quero%20ajuda%20para%20organizar%20meus%20sistemas%20e%20notas%20fiscais"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="mt-8 inline-flex items-center gap-2 rounded-xl bg-slate-900 px-6 py-4 font-bold text-white transition hover:bg-slate-800"
+                        class="mt-8 inline-flex items-center gap-2 rounded-xl bg-slate-900 px-6 py-4 font-bold text-white transition-colors duration-200 hover:bg-slate-800"
                     >
-                        <i data-lucide="message-circle" class="h-5 w-5"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path><path d="M8 12h.01"></path><path d="M12 12h.01"></path><path d="M16 12h.01"></path></svg>
                         Falar com a DEAB Tech
                     </a>
                 </div>
@@ -466,7 +466,7 @@
                 <div class="grid gap-4 sm:grid-cols-2">
 
                     <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-                        <i data-lucide="user-round-check" class="h-7 w-7 text-emerald-700"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-7 w-7 text-emerald-700" aria-hidden="true"><path d="M18 21a8 8 0 0 0-12 0"></path><circle cx="12" cy="7" r="4"></circle><path d="m16 19 2 2 4-4"></path></svg>
                         <h3 class="mt-4 font-black text-slate-900">Atendimento próximo</h3>
                         <p class="mt-2 text-sm leading-6 text-slate-600">
                             Você fala com uma pessoa que entende sua necessidade
@@ -475,7 +475,7 @@
                     </div>
 
                     <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-                        <i data-lucide="wrench" class="h-7 w-7 text-emerald-700"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-7 w-7 text-emerald-700" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4l-6.6 6.6a2 2 0 1 0 2.8 2.8l6.6-6.6a4 4 0 0 0 5.4-5.4l-2.3 2.3-2.8-.7-.7-2.8Z"></path></svg>
                         <h3 class="mt-4 font-black text-slate-900">Configuração prática</h3>
                         <p class="mt-2 text-sm leading-6 text-slate-600">
                             A ferramenta é configurada pensando no seu equipamento
@@ -484,7 +484,7 @@
                     </div>
 
                     <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-                        <i data-lucide="graduation-cap" class="h-7 w-7 text-emerald-700"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-7 w-7 text-emerald-700" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5Z"></path><path d="M6 12v5c3 2 9 2 12 0v-5"></path><path d="M22 10v6"></path></svg>
                         <h3 class="mt-4 font-black text-slate-900">Você aprende usando</h3>
                         <p class="mt-2 text-sm leading-6 text-slate-600">
                             Treinamento direto ao ponto, com exemplos da sua
@@ -493,7 +493,7 @@
                     </div>
 
                     <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-                        <i data-lucide="headphones" class="h-7 w-7 text-emerald-700"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-7 w-7 text-emerald-700" aria-hidden="true"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5a9 9 0 0 1 18 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path></svg>
                         <h3 class="mt-4 font-black text-slate-900">Suporte quando precisar</h3>
                         <p class="mt-2 text-sm leading-6 text-slate-600">
                             Se surgir uma dúvida depois, você não fica sozinho.
@@ -585,7 +585,7 @@
                 <div class="relative mx-auto max-w-3xl text-center">
 
                     <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-700 text-white">
-                        <i data-lucide="messages-square" class="h-7 w-7"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-7 w-7" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"></path><path d="M8 9h8"></path><path d="M8 13h6"></path></svg>
                     </div>
 
                     <h2 class="mt-6 text-3xl font-black text-white sm:text-4xl">
@@ -602,9 +602,9 @@
                         href="https://wa.me/5527996962395?text=Quero%20ajuda%20para%20organizar%20meus%20sistemas%20e%20notas%20fiscais"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="mt-8 inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-700 px-7 py-4 text-base font-black text-white shadow-lg shadow-emerald-900/30 transition hover:bg-emerald-600"
+                        class="mt-8 inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-700 px-7 py-4 text-base font-black text-white shadow-lg shadow-emerald-900/30 transition-colors duration-200 hover:bg-emerald-600"
                     >
-                        <i data-lucide="message-circle" class="h-5 w-5"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path><path d="M8 12h.01"></path><path d="M12 12h.01"></path><path d="M16 12h.01"></path></svg>
                         Quero ajuda para organizar meus sistemas e notas fiscais
                     </a>
 
@@ -667,25 +667,25 @@
                     <ul class="mt-4 space-y-3 text-sm">
 
                         <li>
-                            <a href="index.html#inicio" class="transition hover:text-emerald-400">
+                            <a href="index.html#inicio" class="transition-colors duration-200 hover:text-emerald-400">
                                 Início
                             </a>
                         </li>
 
                         <li>
-                            <a href="index.html#solucoes" class="transition hover:text-emerald-400">
+                            <a href="index.html#solucoes" class="transition-colors duration-200 hover:text-emerald-400">
                                 Soluções em TI
                             </a>
                         </li>
 
                         <li>
-                            <a href="index.html#suporte" class="transition hover:text-emerald-400">
+                            <a href="index.html#suporte" class="transition-colors duration-200 hover:text-emerald-400">
                                 Suporte Remoto
                             </a>
                         </li>
 
                         <li>
-                            <a href="index.html#equipamentos" class="transition hover:text-emerald-400">
+                            <a href="index.html#equipamentos" class="transition-colors duration-200 hover:text-emerald-400">
                                 Dicas & Equipamentos
                             </a>
                         </li>
@@ -708,20 +708,20 @@
                                 href="https://wa.me/5527996962395?text=Ol%C3%A1%2C%20vim%20pelo%20site%20DEAB%20Tech"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                class="flex items-center gap-2 transition hover:text-emerald-400"
+                                class="flex items-center gap-2 transition-colors duration-200 hover:text-emerald-400"
                             >
-                                <i data-lucide="message-circle" class="h-4 w-4"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path><path d="M8 12h.01"></path><path d="M12 12h.01"></path><path d="M16 12h.01"></path></svg>
                                 WhatsApp
                             </a>
                         </li>
 
                         <li class="flex items-center gap-2">
-                            <i data-lucide="monitor" class="h-4 w-4"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"></rect><line x1="8" x2="16" y1="21" y2="21"></line><line x1="12" x2="12" y1="17" y2="21"></line></svg>
                             Atendimento remoto
                         </li>
 
                         <li class="flex items-center gap-2">
-                            <i data-lucide="map-pin" class="h-4 w-4"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                             Atendimento presencial
                         </li>
 
@@ -743,7 +743,7 @@
 
                         <a
                             href="#"
-                            class="transition hover:text-slate-300"
+                            class="transition-colors duration-200 hover:text-slate-300"
                             onclick="return false;"
                         >
                             Política de Privacidade
@@ -753,7 +753,7 @@
                             href="https://deab.com.br"
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="transition hover:text-slate-300"
+                            class="transition-colors duration-200 hover:text-slate-300"
                         >
                             DEAB
                         </a>
@@ -769,9 +769,9 @@
     target="_blank"
     rel="noopener noreferrer"
     aria-label="Falar com a DEAB Tech pelo WhatsApp"
-    class="fixed bottom-5 right-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-emerald-700 text-white shadow-2xl shadow-emerald-500/30 transition hover:scale-105 hover:bg-emerald-600 sm:bottom-7 sm:right-7"
+    class="fixed bottom-5 right-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-emerald-700 text-white shadow-2xl shadow-emerald-500/30 transition-transform duration-200 hover:scale-105 hover:bg-emerald-600 sm:bottom-7 sm:right-7"
 >
-    <i data-lucide="message-circle" class="h-6 w-6"></i>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path><path d="M8 12h.01"></path><path d="M12 12h.01"></path><path d="M16 12h.01"></path></svg>
 </a>
 
 <!-- =====================================================
