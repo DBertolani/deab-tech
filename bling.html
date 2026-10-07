@@ -59,30 +59,9 @@
     </script>
 
     <link rel="preconnect" href="https://cdn.tailwindcss.com">
-    <link rel="preconnect" href="https://unpkg.com">
 
-    <!-- Tailwind CSS via CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        deab: {
-                            navy: '#0f172a',
-                            slate: '#1e293b',
-                            green: '#10b981',
-                            greenDark: '#059669'
-                        }
-                    }
-                }
-            }
-        };
-    </script>
-
-    <!-- Ícones Lucide fixados -->
-    <script src="https://unpkg.com/lucide@0.344.0" defer></script>
+    <!-- Tailwind carregado de forma adiada para não competir com a renderização inicial. -->
+    <script src="https://cdn.tailwindcss.com" defer></script>
 
     <style>
         html {
@@ -148,6 +127,7 @@
                         class="h-full w-full object-contain"
                         width="44"
                         height="44"
+                        decoding="async"
                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                     >
                     <span class="hidden h-full w-full items-center justify-center bg-emerald-700 text-xl font-black text-white">D</span>
@@ -713,7 +693,8 @@
                             class="h-full w-full object-contain"
                             width="44"
                             height="44"
-                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                            decoding="async"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                         >
                         <span class="hidden h-full w-full items-center justify-center bg-emerald-700 text-xl font-black text-white">D</span>
                     </div>
@@ -851,10 +832,24 @@
      JAVASCRIPT
      ===================================================== -->
 <script>
-    // Lucide: mesma inicialização segura do index.html/sistemas.html.
-    window.addEventListener('DOMContentLoaded', () => {
-        if (window.lucide) {
-            window.lucide.createIcons();
+    // Lucide é carregado somente após o carregamento inicial.
+    // Assim seus ~184 ms de processamento não entram no caminho crítico.
+    window.addEventListener('load', () => {
+        const loadLucide = () => {
+            const script = document.createElement('script');
+            script.src = 'https://unpkg.com/lucide@0.344.0';
+            script.onload = () => {
+                if (window.lucide) {
+                    window.lucide.createIcons();
+                }
+            };
+            document.body.appendChild(script);
+        };
+
+        if ('requestIdleCallback' in window) {
+            window.requestIdleCallback(loadLucide, { timeout: 1500 });
+        } else {
+            setTimeout(loadLucide, 300);
         }
     });
 
